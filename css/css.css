@@ -1,0 +1,19 @@
+
+body {
+	padding-top: 70px;
+	/*background-color: #eee;*/
+}
+
+.box{
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	flex: flexbox;
+	flex: 1;
+}
+
+img{
+	width: 100%;
+
+
+}
