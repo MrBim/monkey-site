@@ -14,13 +14,24 @@
 	
 </head>
 <body>
+
 <nav class="navbar navbar-fixed-top box">
 	<div class="container">
-		<div class="navbar-header">
+		<div class="nav navbar-header">
+
 			<img src="media/images/logo-black.png" id="topLogo" class="nav navbar-left">
 			<a class="nav navbar-brand" href="/">The Monkeys</a>
+
+			<button type="button" class="navbar-toggle collasped" 
+		    		data-toggle="collapse" 
+		    		data-target="#myCollapsingList">
+		    		<!--creates collasped menu icon appearence-->
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    </button>
 		</div>
-		<ul class="nav navbar-nav navbar-right">
+		<ul id="myCollapsingList" class="nav navbar-nav navbar-right collapse navbar-collapse">
 			<li><a href="/">Home</a></li>
 			<li><a href="/about">About</a></li>
 			<li><a href="/gigs">Gigs</a></li>
@@ -35,13 +46,26 @@
 	
 </div>
 
-<footer>
+<footer class="nav navbar navbar-fixed-bottom">
 	<div class="container">
-		<div class="row"></div>
-
-		<form>
-			
-		</form>
+		<div class="row">
+			<div class="col-sm-5">
+				<span><a href=""><img class="tinyLink" src="media/icons/facebook-logo.png"></a></span>
+				<span><a href=""><img class="tinyLink" src="media/icons/twitter-logo.png"></a></span>
+				<span><a href=""><img class="tinyLink" src="media/icons/youtube-play-button.png"></a></span>
+				
+			</div>
+			<form> 
+		        <div class="form-group">
+			        <div class="col-sm-1">
+				        <button type="submit" class="btn btn-sm listAddAddress">join mailing list</button>
+			        </div>
+			        <div class="col-sm-6">
+			            <input type="text" class="form-control listAddAddress" placeholder="Email address">
+			        </div>
+			    </div>
+			</form>
+		</div>
 	</div>
 </footer>
 

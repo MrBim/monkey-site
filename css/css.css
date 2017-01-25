@@ -26,3 +26,16 @@ img{
 .songBox{
 	background-color: #eee;
 }
+audio{
+	height: 45px;
+	width: 100%;
+}
+.tinyLink{
+	width: 30px;
+	margin: 10px;
+}
+
+.listAddAddress{
+	height: 30px;
+	margin-bottom:10px; 
+}
