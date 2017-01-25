@@ -10,5 +10,17 @@ angular.module('MonkeySite').config(function($locationProvider, $routeProvider){
 	.when('/about',{
 		templateUrl: 'templates/about.html',
 		controller: 'AboutController'
+	})
+	.when('/gigs', {
+		templateUrl: 'templates/gigs.html',
+		controller: 'GigsController'
+	})
+	.when('/media', {
+		templateUrl: 'templates/media.html',
+		controller: 'MediaController'
+	})
+	.when('/contact', {
+		templateUrl: 'templates/contact.html',
+		controller: 'ContactController'
 	});
 });
