@@ -1,11 +1,13 @@
 
 body {
 	padding-top: 70px;
-	/*background-color: #eee;*/
+	background-color: #eee; 
 }
-
+.page{
+	padding-bottom: 100px;
+}
 .box{
-	background-color: #fff;
+/*	background-color: #fff;*/
 	padding: 10px;
 	border-radius: 5px;
 	flex: flexbox;
@@ -17,15 +19,32 @@ img{
 }
 
 .navbar{
-	background-color: #eee;
+	background-color: #fff;
 }
 #topLogo{
 	height: 50px;
 	width: 50px;
 }
 .songBox{
-	background-color: #eee;
+	background-color: #ddd;
 }
+.bandBox{
+	border-radius: 5px;
+	background-color: #ddd;
+}
+.biogBox{
+	background-color: #ddd;
+/*	margin: 5px;*/
+}
+
+.vidBox{
+	background-color: #ddd;
+	padding-top: 15px;
+	padding-right: 4px;
+	padding-bottom: 12px;
+	padding-left: 4px;
+}
+
 audio{
 	height: 45px;
 	width: 100%;
@@ -44,5 +63,25 @@ audio{
 	width: 800px;
 }
 
+.bigBookingText{
+	width: 800px;
+	min-height: 300px;
+}
 
+#musicVid{
+	width: 100%;
+}
+.tenPad{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+table{
+	size: 2em;
+}
+th{
+	padding: 10px;
+}
 
+td{
+	padding: 10px;
+}
