@@ -28,6 +28,10 @@ td{
 	padding: 10px;
 }
 
+a{
+	color: #541212;
+}
+
 .page{
 	padding-bottom: 100px;
 }
@@ -37,6 +41,13 @@ td{
 	border-radius: 5px;
 	margin-bottom: 10px;
 }
+
+.noPad{
+	padding: 0px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
 
 .leftBox{
 	padding: 0px 10px 10px 0px;
@@ -80,12 +91,13 @@ td{
 .listAddAddressButton{
 	height: 30px;
 	margin:10px;
-	align-self: stretch; 
+	width: 100%; 
 }
 
 .listAddAddressText{
 	height: 30px;
 	margin:10px; 
+	width:97%;
 }
 
 .stretch{
@@ -121,12 +133,16 @@ td{
 	background-color: #000;
 }
 .vidCol{
+	display: flex;
 	align-content: center;
 }
 .vidTitle{
 	margin-top: 0px;
 }
 
+.bookLink{
+	text-align: center;
+}
 @media screen and (max-width: 768px) {
     .leftBox{
 	padding: 0px 10px 10px 10px;
