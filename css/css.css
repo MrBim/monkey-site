@@ -1,41 +1,65 @@
 
 body {
-	padding-top: 70px;
+	padding-top: 90px;
 	background-color: #eee; 
-}
-.page{
-	padding-bottom: 100px;
-}
-.box{
-/*	background-color: #fff;*/
-	padding: 10px;
-	border-radius: 5px;
-	flex: flexbox;
-	flex: 1;
 }
 
 img{
 	width: 100%;
 }
 
+audio{
+	height: 45px;
+	width: 100%;
+}
+
+table{
+	size: 2em;
+}
+
+th{
+	padding: 10px;
+}
+
+td{
+	padding: 10px;
+}
+
+.page{
+	padding-bottom: 100px;
+}
+
+.box{
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.leftBox{
+	padding: 0px 10px 10px 0px;
+	
+}
+
+.rightBox{
+	padding: 0px 0px 10px 10px;
+
+}
+
 .navbar{
 	background-color: #fff;
 }
-#topLogo{
-	height: 50px;
-	width: 50px;
-}
-.songBox{
+
+.dddBox{
 	background-color: #ddd;
 }
+
+
 .bandBox{
 	border-radius: 5px;
 	background-color: #ddd;
 }
-.biogBox{
-	background-color: #ddd;
-/*	margin: 5px;*/
-}
+
+
 
 .vidBox{
 	background-color: #ddd;
@@ -45,43 +69,71 @@ img{
 	padding-left: 4px;
 }
 
-audio{
-	height: 45px;
-	width: 100%;
-}
 .tinyLink{
 	width: 30px;
 	margin: 10px;
 }
 
-.listAddAddress{
+.listAddAddressButton{
 	height: 30px;
-	margin-bottom:10px; 
+	margin:10px;
+	align-self: stretch; 
+}
+
+.listAddAddressText{
+	height: 30px;
+	margin:10px; 
+}
+
+.stretch{
+	align-content: stretch;
 }
 
 .bookingText{
-	width: 800px;
+	width: 100%;
 }
 
 .bigBookingText{
-	width: 800px;
+	width: 100%;
 	min-height: 300px;
 }
 
-#musicVid{
-	width: 100%;
-}
 .tenPad{
 	padding-left: 10px;
 	padding-right: 10px;
 }
-table{
-	size: 2em;
+.gigBox{
+	align-items: stretch; 
 }
-th{
-	padding: 10px;
+#topLogo{
+	height: 50px;
+	width: 50px;
 }
 
-td{
-	padding: 10px;
+.musicVid{
+	width: 100%;
 }
+
+.icon-bar{
+	background-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .leftBox{
+	padding: 0px 10px 10px 10px;
+	}
+
+	.rightBox{
+		padding: 0px 10px 10px 10px;
+	}
+
+	.bandBox{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
+
+
+
+

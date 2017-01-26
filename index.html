@@ -17,19 +17,19 @@
 
 <nav class="navbar navbar-fixed-top box">
 	<div class="container">
+<!-- Navbar header with links-->
 		<div class="nav navbar-header">
-
 			<a href="/"><img src="media/images/logo-black.png"  id="topLogo" class="nav navbar-left"></a>
 			<a class="nav navbar-brand" href="/">The Monkeys</a>
 
 			<button type="button" class="navbar-toggle collasped" 
-		    		data-toggle="collapse" 
-		    		data-target="#myCollapsingList">
-		    		<!--creates collasped menu icon appearence-->
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			    </button>
+	    		data-toggle="collapse" 
+	    		data-target="#myCollapsingList">
+	    		<!--creates collasped menu icon appearence-->
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		    </button>
 		</div>
 		<ul id="myCollapsingList" class="nav navbar-nav navbar-right collapse navbar-collapse">
 			<li><a href="/">Home</a></li>
@@ -41,27 +41,30 @@
 	</div>
 </nav>
 
-
+<!-- div to hold content from templates -->
 <div ng-view>
 	
 </div>
 
+
+<!-- footer for social media links and newsletter sign up -->
 <footer class="nav navbar navbar-fixed-bottom">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-5">
+
+			<div class="col-sm-4">
 				<span><a href=""><img class="tinyLink" src="media/icons/facebook-logo.png"></a></span>
 				<span><a href=""><img class="tinyLink" src="media/icons/twitter-logo.png"></a></span>
 				<span><a href=""><img class="tinyLink" src="media/icons/youtube-play-button.png" href="https://www.youtube.com/user/themonkees"></a></span>
-				
 			</div>
+
 			<form> 
 		        <div class="form-group">
-			        <div class="col-sm-1">
-				        <button type="submit" class="btn btn-sm listAddAddress">join mailing list</button>
+			        <div class="col-sm-2 col-xs-3 stretch">
+				        <button type="submit" class="btn btn-sm listAddAddressButton">join mailing list</button>
 			        </div>
-			        <div class="col-sm-6">
-			            <input type="text" class="form-control listAddAddress" placeholder="Email address">
+			        <div class="col-sm-6 col-xs-9 stretch">
+			            <input type="text" class="form-control listAddAddressText" placeholder="Email address">
 			        </div>
 			    </div>
 			</form>
@@ -71,6 +74,6 @@
 
 </body>
 
- <script src="js/app.js"></script>
+<script src="js/app.js"></script>
 <script src="js/controller.js"></script>
 </html>
