@@ -12,6 +12,9 @@ audio{
 	height: 45px;
 	width: 100%;
 }
+video{
+	width: 100%
+}
 
 table{
 	size: 2em;
@@ -116,6 +119,12 @@ td{
 
 .icon-bar{
 	background-color: #000;
+}
+.vidCol{
+	align-content: center;
+}
+.vidTitle{
+	margin-top: 0px;
 }
 
 @media screen and (max-width: 768px) {
