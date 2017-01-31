@@ -1,4 +1,3 @@
-
 body {
 	padding-top: 90px;
 	background-color: #eee; 
@@ -32,6 +31,12 @@ a{
 	color: #541212;
 }
 
+.formLabel{
+	display: inline-block;
+	text-align: left;
+	width: 100px
+}
+
 .page{
 	padding-bottom: 100px;
 }
@@ -47,7 +52,6 @@ a{
 	border-radius: 5px;
 	margin-bottom: 10px;
 }
-
 
 .leftBox{
 	padding: 0px 10px 10px 0px;
@@ -67,13 +71,10 @@ a{
 	background-color: #ddd;
 }
 
-
 .bandBox{
 	border-radius: 5px;
 	background-color: #ddd;
 }
-
-
 
 .vidBox{
 	background-color: #ddd;
@@ -120,6 +121,7 @@ a{
 .gigBox{
 	align-items: stretch; 
 }
+
 #topLogo{
 	height: 50px;
 	width: 50px;
@@ -132,10 +134,12 @@ a{
 .icon-bar{
 	background-color: #000;
 }
+
 .vidCol{
 	display: flex;
 	align-content: center;
 }
+
 .vidTitle{
 	margin-top: 0px;
 }
@@ -143,6 +147,10 @@ a{
 .bookLink{
 	text-align: center;
 }
+
+:focus{
+      background-color: #eee;
+ }
 @media screen and (max-width: 768px) {
     .leftBox{
 	padding: 0px 10px 10px 10px;
