@@ -1,4 +1,4 @@
-angular.module('MonkeySite', ['ngRoute', 'RouteControllers']);
+angular.module('MonkeySite', ['ngRoute', 'RouteControllers','AlbumDirective']);
 
 angular.module('MonkeySite').config(function($locationProvider, $routeProvider){
     $locationProvider.html5Mode(true);

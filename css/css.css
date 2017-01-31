@@ -31,6 +31,15 @@ a{
 	color: #541212;
 }
 
+textarea {
+    resize: none;
+}
+.container{
+	min-width: 366px;
+}
+.gigTable{
+	width: 100%;
+}
 .formLabel{
 	display: inline-block;
 	text-align: left;
@@ -85,19 +94,20 @@ a{
 }
 
 .tinyLink{
-	width: 30px;
-	margin: 10px;
+	width: 18px;
+	margin: 5px;
 }
 
 .listAddAddressButton{
-	height: 30px;
-	margin:10px;
+	height: 20px;
+	margin:4px;
 	width: 100%; 
+	min-width: 32px;
 }
 
 .listAddAddressText{
-	height: 30px;
-	margin:10px; 
+	height: 20px;
+	margin: 5px; 
 	width:97%;
 }
 
@@ -111,13 +121,14 @@ a{
 
 .bigBookingText{
 	width: 100%;
-	min-height: 300px;
+
 }
 
 .tenPad{
 	padding-left: 10px;
 	padding-right: 10px;
 }
+
 .gigBox{
 	align-items: stretch; 
 }
@@ -146,6 +157,10 @@ a{
 
 .bookLink{
 	text-align: center;
+}
+
+#bottomBar{
+	min-height: 30px;
 }
 
 :focus{

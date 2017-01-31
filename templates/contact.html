@@ -6,27 +6,40 @@
 			<p>some text about how they are available for bookings and have prices and to make an enquiery using the form and we will get back to you as soon as possible.</p>
 		</div>
 
-		<form name="contactForm" data-ng-submit="sumitform()" novalidate="">
+		<form name="contactForm" id="contactForm" data-ng-submit="submitForm()" novalidate>
 			
 			<div class="form-group">
 				<label>Name</label>
-				<input type="text" name="name" class="form-control" data-ng-model="contact.name" required>
-				<p data-ng-show="contactForm.name.$pristine" class="help-block">Your name is required</p>
+				<input type="text" name="name" id="contactOne" class="form-control" data-ng-model="contact.name" required placeholder="Your name is required">	
+				
 			</div>
 			
 			<div class="form-group">
                 <label>Email</label>
-                <input type="email" name="email" class="form-control" data-ng-model="contact.email" required>
-                <p data-ng-show="contactForm.email.$pristine" class="help-block">Your email is required</p>
+                <input type="email" name="email" id="contactTwo" class="form-control" data-ng-model="contact.email" required placeholder="Your email is required" >
             </div>
+ 			
+ 			<label>Message</label>
+            <textarea name="message" class="bigBookingText" id="contactThree" data-ng-model="contact.message" minlength="2" rows="12" placeholder="A message is required" required>
+            	your message goes here
+            </textarea>
 
-            <div class="form-group">
-                    <label>Message</label>
-                    <input type="text" name="message" class="form-control bigBookingText" data-ng-model="contact.message" required>
-                    <p data-ng-show="contactForm.message.$pristine" class="help-block">A message is required</p>
-                </div>
-                 <button type="submit" class="btn btn-primary" data-ng-disabled="contactForm.$invalid">Submit</button>
+             <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#contactModal" data-ng-disabled="contactForm.$invalid">Submit</button>
 		</form>
-		
+
+		<!-- message sent response  thing  -->
+		<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactForm-modal" aria-hidden="true">
+			 <div class="modal-dialog">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	                    <h4 class="modal-title" id="todo-form-header">Message sent.</h4>
+	                </div>
+                </div>
+            </div>
+		</div>
+
 	</div>
 </div>
+
+
