@@ -1,7 +1,6 @@
 angular.module('RouteControllers', [])
 
 	.controller('HomeController', function($scope){
-		$scope.title = "the monkey site!";
 	})
 
 	.controller('AboutController', function($scope){
@@ -14,4 +13,16 @@ angular.module('RouteControllers', [])
 	})
 
 	.controller('ContactController', function($scope){
+		$scope.contactUser = {};
+
+
+		        $scope.submitForm = function() {
+            if ($scope.contactForm.$valid) {
+                $scope.contactUser.name = $scope.user.name;
+                $scope.contactUser.email = $scope.user.email;
+                $scope.contactUser.message = $scope.user.message;
+          
+ // do something to send this info as an email?
+            }
+        }
 	});
