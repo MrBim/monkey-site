@@ -4,23 +4,23 @@ angular.module('MonkeySite').config(function($locationProvider, $routeProvider){
     $locationProvider.html5Mode(true);
 
 	$routeProvider.when('/',{
-		templateUrl: 'templates/home.html',
+		templateUrl: 'monkey-site/templates/home.html',
 		controller: 'HomeController'
 	})
 	.when('/about',{
-		templateUrl: 'templates/about.html',
+		templateUrl: 'monkey-site/templates/about.html',
 		controller: 'AboutController'
 	})
 	.when('/gigs', {
-		templateUrl: 'templates/gigs.html',
+		templateUrl: 'monkey-site/templates/gigs.html',
 		controller: 'GigsController'
 	})
 	.when('/media', {
-		templateUrl: 'templates/media.html',
+		templateUrl: 'monkey-site/templates/media.html',
 		controller: 'MediaController'
 	})
 	.when('/contact', {
-		templateUrl: 'templates/contact.html',
+		templateUrl: 'monkey-site/templates/contact.html',
 		controller: 'ContactController'
 	});
 });
