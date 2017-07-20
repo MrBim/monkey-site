@@ -3,23 +3,23 @@ angular.module('MonkeySite', ['ngRoute', 'RouteControllers','AlbumDirective']);
 angular.module('MonkeySite').config(function($locationProvider, $routeProvider){
     $locationProvider.html5Mode(true);
 
-	$routeProvider.when('/',{
+	$routeProvider.when('monkey-site/',{
 		templateUrl: 'monkey-site/templates/home.html',
 		controller: 'HomeController'
 	})
-	.when('/about',{
+	.when('monkey-site/about',{
 		templateUrl: 'monkey-site/templates/about.html',
 		controller: 'AboutController'
 	})
-	.when('/gigs', {
+	.when('monkey-site/gigs', {
 		templateUrl: 'monkey-site/templates/gigs.html',
 		controller: 'GigsController'
 	})
-	.when('/media', {
+	.when('monkey-site/media', {
 		templateUrl: 'monkey-site/templates/media.html',
 		controller: 'MediaController'
 	})
-	.when('/contact', {
+	.when('monkey-site/contact', {
 		templateUrl: 'monkey-site/templates/contact.html',
 		controller: 'ContactController'
 	});
