@@ -3,7 +3,7 @@ angular.module('MonkeySite', ['ngRoute', 'RouteControllers','AlbumDirective']);
 angular.module('MonkeySite').config(function($locationProvider, $routeProvider){
     $locationProvider.html5Mode(true);
 
-	$routeProvider.when('monkey-site/',{
+	$routeProvider.when('/',{
 		templateUrl: 'monkey-site/templates/home.html',
 		controller: 'HomeController'
 	})
