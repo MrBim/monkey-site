@@ -4,7 +4,7 @@ angular.module('MonkeySite').config(function($locationProvider, $routeProvider){
     $locationProvider.html5Mode(true);
 
 	$routeProvider.when('.',{
-		templateUrl: 'templates/home.html',
+		templateUrl: 'monkey-site/templates/home.html',
 		controller: 'HomeController'
 	})
 	.when('about',{
