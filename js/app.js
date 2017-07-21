@@ -11,7 +11,7 @@ angular.module('MonkeySite').config(function($locationProvider, $routeProvider){
 		templateUrl: 'monkey-site/templates/about.html',
 		controller: 'AboutController'
 	})
-	.when('monkey-site/gigs', {
+	.when('/gigs', {
 		templateUrl: 'monkey-site/templates/gigs.html',
 		controller: 'GigsController'
 	})
