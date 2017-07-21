@@ -1,81 +1,81 @@
 <!DOCTYPE html>
 <html ng-app="MonkeySite">
-<head>
-	<base href="/monkey-site/">
-	<meta charset="utf-8">
-	<title> The Monkeys</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<base href="/"> 
-    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
-    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/css.css">
-	
-</head>
-<body>
+	<head>
+		<base href="/monkey-site/">
+		<meta charset="utf-8">
+		<title> The Monkeys</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<base href="/"> 
+	    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+	    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+	    <link rel="stylesheet" type="text/css" href="css/css.css">
+		
+	</head>
+	<body>
 
-<nav class="navbar navbar-fixed-top box" >
-	<div class="container">
-<!-- Navbar header with links-->
-		<div class="nav navbar-header">
-			<a href="."><img src="media/images/logo-black.png"  id="topLogo" class="nav navbar-left" alt="main band logo"></a>
-			<a class="nav navbar-brand" href=".">The Monkeys</a>
+	<nav class="navbar navbar-fixed-top box" >
+		<div class="container">
+	<!-- Navbar header with links-->
+			<div class="nav navbar-header">
+				<a href="."><img src="media/images/logo-black.png"  id="topLogo" class="nav navbar-left" alt="main band logo"></a>
+				<a class="nav navbar-brand" href=".">The Monkeys</a>
 
-			<button type="button" class="navbar-toggle collasped" 
-	    		data-toggle="collapse" 
-	    		data-target="#myCollapsingList">
-	    		<!--creates collasped menu icon appearence-->
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		    </button>
-		</div>
-		<ul id="myCollapsingList" class="nav navbar-nav navbar-right collapse navbar-collapse">
-			<li data-toggle="collapse" data-tar.et=".in"><a href=".">Home</a></li>
-			<li data-toggle="collapse" data-target=".in"><a href="about">About</a></li>
-			<li data-toggle="collapse" data-target=".in"><a href="gigs">Gigs</a></li>
-			<li data-toggle="collapse" data-target=".in"><a href="media">Media</a></li>
-			<li data-toggle="collapse" data-target=".in"><a href="contact">Contact</a></li>
-		</ul>
-	</div>
-</nav>
-
-<!-- div to hold content from templates -->
-<div ng-view>
-	
-</div>
-
-
-<!-- footer for social media links and newsletter sign up -->
-<footer id="bottomBar" class="nav navbar navbar-fixed-bottom">
-	<div class="container">
-		<div class="row">
-
-			<div class="col-xs-4">
-				<span><a target="blank" href="https://www.facebook.com/TheMonkees/"><img class="tinyLink" src="media/icons/facebook-logo.png" alt="facebook logo"></a></span>
-				<span><a target="blank" href="https://twitter.com/themonkees?lang=en"><img class="tinyLink" src="media/icons/twitter-logo.png" alt="twitter
-				 logo"></a></span>
-				<span><a target="blank" href="https://www.youtube.com/user/themonkees"><img class="tinyLink" src="media/icons/youtube-play-button.png" alt="YouTube logo"></a></span>
+				<button type="button" class="navbar-toggle collasped" 
+		    		data-toggle="collapse" 
+		    		data-target="#myCollapsingList">
+		    		<!--creates collasped menu icon appearence-->
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    </button>
 			</div>
-
-			<form class="col-xs-8"> 
-		        <div class="form-group">
-			        <div class="col-xs-3">
-				        <button type="submit" class="btn btn-xs listAddAddressButton">Join</button>
-			        </div>
-			        <div class="col-xs-9 stretch">
-			            <input type="text" class="form-control listAddAddressText" placeholder="Join mailing list">
-			        </div>
-			    </div>
-			</form>
-
+			<ul id="myCollapsingList" class="nav navbar-nav navbar-right collapse navbar-collapse">
+				<li data-toggle="collapse" data-target=".in"><a href=".">Home</a></li>
+				<li data-toggle="collapse" data-target=".in"><a href="about">About</a></li>
+				<li data-toggle="collapse" data-target=".in"><a href="gigs">Gigs</a></li>
+				<li data-toggle="collapse" data-target=".in"><a href="media">Media</a></li>
+				<li data-toggle="collapse" data-target=".in"><a href="contact">Contact</a></li>
+			</ul>
 		</div>
-	</div>
-</footer>
+	</nav>
 
-</body>
+	<!-- div to hold content from templates -->
+	<div ng-view>
+		
+	</div>
+
+
+	<!-- footer for social media links and newsletter sign up -->
+	<footer id="bottomBar" class="nav navbar navbar-fixed-bottom">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-xs-4">
+					<span><a target="blank" href="https://www.facebook.com/TheMonkees/"><img class="tinyLink" src="media/icons/facebook-logo.png" alt="facebook logo"></a></span>
+					<span><a target="blank" href="https://twitter.com/themonkees?lang=en"><img class="tinyLink" src="media/icons/twitter-logo.png" alt="twitter
+					 logo"></a></span>
+					<span><a target="blank" href="https://www.youtube.com/user/themonkees"><img class="tinyLink" src="media/icons/youtube-play-button.png" alt="YouTube logo"></a></span>
+				</div>
+
+				<form class="col-xs-8"> 
+			        <div class="form-group">
+				        <div class="col-xs-3">
+					        <button type="submit" class="btn btn-xs listAddAddressButton">Join</button>
+				        </div>
+				        <div class="col-xs-9 stretch">
+				            <input type="text" class="form-control listAddAddressText" placeholder="Join mailing list">
+				        </div>
+				    </div>
+				</form>
+
+			</div>
+		</div>
+	</footer>
+
+	</body>
 
 <script src="js/app.js"></script>
 <script src="js/controller.js"></script>
